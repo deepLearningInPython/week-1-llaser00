@@ -32,7 +32,7 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 def ReLu(array, cutoff = 0):
-  array = np.where(array < cutoff, array, cutoff)
+  array = numpy.where(array < cutoff, array, cutoff)
   return array
 
 # -----------------------------------------------
