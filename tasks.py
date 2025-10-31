@@ -32,9 +32,7 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 def ReLu(array, cutoff = 0):
-  for i in enumerate(array):
-    if array[i] < cutoff:
-      array[i] = cutoff
+  array = np.where(array < cutoff, array, cutoff)
   return array
 
 # -----------------------------------------------
