@@ -51,8 +51,8 @@ def ReLu(array, cutoff = 0):
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer(2darray, 1darray):
-    combined_array = np.matmul(2darray, 1darray)
+def neural_net_layer(array2d, array1d):
+    combined_array = numpy.matmul(array2d, array1d)
     final_array = ReLu(combined_array)
     return final_array
 
