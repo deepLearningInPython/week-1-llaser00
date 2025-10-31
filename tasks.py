@@ -32,12 +32,10 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 def ReLu(array, cutoff = 0):
-  for item in array:
-    if item < cutoff:
-      i = array.index(item)
+  for i in enumerate(array):
+    if array[i] < cutoff:
       array[i] = cutoff
   return array
-
 
 # -----------------------------------------------
 
