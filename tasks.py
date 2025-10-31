@@ -13,8 +13,11 @@ import numpy
 # Your code here:
 # -----------------------------------------------
 
-def step
-
+def step(num):
+  if num > 0:
+    return 1
+  else:
+    return -1
 
 # -----------------------------------------------
 
@@ -28,7 +31,11 @@ def step
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+def ReLu(array, cutoff = 0):
+  for item in array:
+    if item < cutoff:
+      item = cutoff
+  return array
 
 
 # -----------------------------------------------
@@ -44,7 +51,10 @@ def ReLu
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer
+def neural_net_layer(2darray, 1darray):
+    combined_array = np.matmul(2darray, 1darray)
+    final_array = ReLu(combined_array)
+    return final_array
 
 
 # ------------------------------------------
