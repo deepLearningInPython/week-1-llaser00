@@ -34,7 +34,8 @@ def step(num):
 def ReLu(array, cutoff = 0):
   for item in array:
     if item < cutoff:
-      item = cutoff
+      i = array.index(item)
+      array[i] = cutoff
   return array
 
 
